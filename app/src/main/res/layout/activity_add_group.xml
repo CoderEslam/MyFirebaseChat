@@ -25,7 +25,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/padding80"
         android:focusable="true"
@@ -47,14 +47,32 @@
             app:civ_border_color="@color/white"
             app:civ_border_width="@dimen/padding1"
             app:civ_circle_background_color="@color/deep_orange_500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UnusedAttribute" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/padding30"
+            android:layout_height="@dimen/padding30"
+            android:layout_gravity="center_vertical"
+            android:alpha=".5"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/circle_my_selector"
+            android:src="@drawable/ic_small_photo"
+            app:layout_constraintBottom_toBottomOf="@+id/imgAvatar"
+            app:layout_constraintEnd_toEndOf="@+id/imgAvatar"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imgAvatar"
+            app:layout_constraintTop_toTopOf="@+id/imgAvatar"
+            app:layout_constraintVertical_bias="1.0"
             tools:ignore="UnusedAttribute" />
 
         <EditText
             android:id="@+id/txtGroupName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/padding10"
-            android:layout_marginRight="@dimen/padding10"
             android:layout_weight="3"
             android:fontFamily="@font/roboto_regular"
             android:gravity="start"
@@ -66,8 +84,12 @@
             android:maxLines="1"
             android:paddingBottom="@dimen/padding20"
             android:textAlignment="viewStart"
-            android:textSize="@dimen/font_fourteen" />
-    </LinearLayout>
+            android:textSize="@dimen/font_fourteen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgAvatar"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <View
         android:id="@+id/line"
