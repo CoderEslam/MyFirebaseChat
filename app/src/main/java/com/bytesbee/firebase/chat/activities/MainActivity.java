@@ -175,7 +175,7 @@ public class MainActivity extends BaseActivity {
 
     public void rotateFabForward() {
         ViewCompat.animate(fabMain)
-                .rotation(5.0F)
+                .rotation(20.0F)
                 .withLayer()
                 .setDuration(300L)
                 .setInterpolator(new OvershootInterpolator(10.0F))

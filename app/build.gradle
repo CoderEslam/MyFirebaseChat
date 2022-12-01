@@ -13,15 +13,15 @@ android {
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
 
-        buildConfigField 'boolean', "ADS_SHOWN", "true"//true or false
+        buildConfigField 'boolean', "ADS_SHOWN", "false"//true or false
         //Test Ads Key
         resValue 'string', "main_app_id", "ca-app-pub-8676187581068146~3154011298"
         resValue 'string', "banner_app_id", "ca-app-pub-3940256099942544/6300978111"
         resValue 'string', "interstitial_app_id", "ca-app-pub-3940256099942544/1033173712"
 
         //Maps & Places
-        resValue 'string', "key_android", "{YOUR_ANDROID_KEY}"
-        resValue 'string', "key_maps", "{YOUR_MAP_KEY}" // Here you must have to enable Billing info from Console of Google.
+        resValue 'string', "key_android", "AIzaSyDMPCo9tPTB7JLtKAruOk2BMT1f65Y2Z1I"
+        resValue 'string', "key_maps", "AIzaSyDMPCo9tPTB7JLtKAruOk2BMT1f65Y2Z1I" // Here you must have to enable Billing info from Console of Google.
 
         resValue 'string', "authority", applicationId + ".fileprovider"
     }
