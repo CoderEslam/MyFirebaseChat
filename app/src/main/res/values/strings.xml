@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">My Firebase Chat</string>
     <string name="app_description">Real time chat with your friends!</string>
-    <string name="app_company_name">Powered by: %1$s</string>
-    <string name="app_company">BytesBee</string>
+    <string name="app_company_name">Programmed by: %1$s</string>
+    <string name="app_company">Eslam Ghazy</string>
     <string name="app_version">v %1$s</string>
     <string name="cDescription" />
 
